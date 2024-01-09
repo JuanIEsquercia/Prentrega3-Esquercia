@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Raleway:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+:root{
+    --imagen-bg: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    --color-bg:  #D9AFD9;  
+    --font-principal: 'Jura', sans-serif;
+    --bg-hover: #2bff8765;
+}
+
+.contenedor__titulo{
+    background-color: var(--color-bg);
+    background-image: var(--imagen-bg);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contenedor__titulo p{
+    color: white;
+}
+.titulo__principal{
+    font-family: var(--font-principal);
+    color: black;
+}
+.contenedor__general{
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+    "uno dos tres";
+    gap: 20px;
+    background-color: var(--color-bg);
+    padding: 20px;
+    
+}
+.presentacion__cartas:hover{
+    background-color: var(--bg-hover);
+}
+.presentacion__boton{
+    background-color: #97D9E1;
+    border: none;
+    color: black;
+}
+.div__pie{
+    box-sizing: content-box;
+}
+.lista__pie{
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.link__pie{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:730px) {
+    .contenedor__titulo{
+        height: 350px;
+        
+    }
+
+    .contenedor__general{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
