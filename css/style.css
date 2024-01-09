@@ -12,7 +12,6 @@
     --font-principal: 'Jura', sans-serif;
     --bg-hover: #2bff8765;
 }
-
 .contenedor__titulo{
     background-color: var(--color-bg);
     background-image: var(--imagen-bg);
@@ -23,6 +22,11 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+h2:hover{
+    color: white;
+    transition: color 2s ease-in-out;
+    font-weight: bold;
 }
 .contenedor__titulo p{
     color: white;
@@ -40,6 +44,7 @@
     gap: 20px;
     background-color: var(--color-bg);
     padding: 20px;
+    font-family: var(--font-principal);
     
 }
 .presentacion__cartas:hover{
@@ -68,6 +73,7 @@
     .contenedor__titulo{
         height: 350px;
         padding: 10px;
+        text-align: center;
     }
 
     .contenedor__general{
