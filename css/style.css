@@ -63,10 +63,11 @@
     text-decoration: none;
     color: black;
 }
+
 @media (max-width:730px) {
     .contenedor__titulo{
         height: 350px;
-        
+        padding: 10px;
     }
 
     .contenedor__general{
