@@ -49,6 +49,7 @@ h2:hover{
 }
 .presentacion__cartas:hover{
     background-color: var(--bg-hover);
+    transition: background-color 2s ease-in-out;
 }
 .presentacion__boton{
     background-color: #97D9E1;
