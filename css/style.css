@@ -215,6 +215,7 @@ h2:hover {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    width: 50%;
 }
 .imagenes__carrusel{
     height: 700px;
@@ -387,6 +388,9 @@ a:active{
     .imagenes__carrusel{
         height: 350px;
     }
+    .contenedor__carrusel{
+        width: 75%;
+    }
     .contenedor__puntaje{
         display: flex;
         flex-direction: column;
@@ -397,6 +401,8 @@ a:active{
     }
     .contenedor__nosotros{
         flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 16px;
     }
     .contenedor__nosotros img{
         max-height: 100%;
