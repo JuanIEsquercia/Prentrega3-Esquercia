@@ -1,0 +1,142 @@
+// main index
+
+.contenedor__index {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    font-family: $font-primary;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    @media (max-width:730px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .parrafo__index {
+        color: white;
+        font-family: $font-primary;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .subtitulo__index {
+        &:hover {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .imagen__index {
+        height: 200px;
+
+        @media (max-width:730px) {
+            height: 100px;
+        }
+    }
+
+
+}
+
+// fotos index
+
+.contenedor__fotos {
+    box-sizing: border-box;
+    margin-top: 10px;
+    gap: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "uno uno dos tres"
+        "cuatro cuatro cinco cinco"
+        "seis seis siete siete"
+        "ocho ocho ocho ocho";
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    width: 100%;
+
+    @media (max-width:730px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .grilla__imagenes--uno {
+        grid-area: uno;
+        box-sizing: border-box;
+
+        @media (max-width:730px) {
+            display: none;
+        }
+
+    }
+
+    .grilla__imagenes--dos {
+        grid-area: dos;
+        box-sizing: border-box;
+
+    }
+
+    .grilla__imagenes--tres {
+        grid-area: tres;
+        box-sizing: border-box;
+
+    }
+
+    .grilla__imagenes--cuatro {
+        grid-area: cuatro;
+        box-sizing: border-box;
+
+    }
+
+    .grilla__imagenes--cinco {
+        grid-area: cinco;
+        box-sizing: border-box;
+
+    }
+
+    .grilla__imagenes--ocho {
+        grid-area: seis;
+        box-sizing: border-box;
+
+    }
+
+    .grilla__imagenes--siete {
+        grid-area: siete;
+        box-sizing: border-box;
+
+    }
+
+    .imagenes__hover {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 35%;
+
+        &:hover {
+            border-radius: 0%;
+        }
+
+        @media (max-width:730px) {
+            max-height: 200px;
+            border-radius: 0px;
+        }
+    }
+
+
+}

@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Raleway:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.contenedor__titulo {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (max-width: 730px) {
+  .contenedor__titulo {
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.contenedor__titulo h2 {
+  font-family: "Jura", sans-serif;
+  color: black;
+}
+.contenedor__titulo h2:hover {
+  color: white;
+  transition: color 2s ease-in-out;
+  font-weight: bold;
+}
+.contenedor__titulo p {
+  color: white;
+}
+
+.div__pie {
+  box-sizing: content-box;
+}
+.div__pie .lista__pie {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.div__pie .lista__pie .link__pie {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor__index {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  font-family: "Jura", sans-serif;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 730px) {
+  .contenedor__index {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contenedor__index .parrafo__index {
+  color: white;
+  font-family: "Jura", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.contenedor__index .subtitulo__index:hover {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.contenedor__index .subtitulo__index a {
+  color: white;
+  text-decoration: none;
+}
+.contenedor__index .imagen__index {
+  height: 200px;
+}
+@media (max-width: 730px) {
+  .contenedor__index .imagen__index {
+    height: 100px;
+  }
+}
+
+.contenedor__fotos {
+  box-sizing: border-box;
+  margin-top: 10px;
+  gap: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "uno uno dos tres" "cuatro cuatro cinco cinco" "seis seis siete siete" "ocho ocho ocho ocho";
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  width: 100%;
+}
+@media (max-width: 730px) {
+  .contenedor__fotos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contenedor__fotos .grilla__imagenes--uno {
+  grid-area: uno;
+  box-sizing: border-box;
+}
+@media (max-width: 730px) {
+  .contenedor__fotos .grilla__imagenes--uno {
+    display: none;
+  }
+}
+.contenedor__fotos .grilla__imagenes--dos {
+  grid-area: dos;
+  box-sizing: border-box;
+}
+.contenedor__fotos .grilla__imagenes--tres {
+  grid-area: tres;
+  box-sizing: border-box;
+}
+.contenedor__fotos .grilla__imagenes--cuatro {
+  grid-area: cuatro;
+  box-sizing: border-box;
+}
+.contenedor__fotos .grilla__imagenes--cinco {
+  grid-area: cinco;
+  box-sizing: border-box;
+}
+.contenedor__fotos .grilla__imagenes--ocho {
+  grid-area: seis;
+  box-sizing: border-box;
+}
+.contenedor__fotos .grilla__imagenes--siete {
+  grid-area: siete;
+  box-sizing: border-box;
+}
+.contenedor__fotos .imagenes__hover {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 35%;
+}
+.contenedor__fotos .imagenes__hover:hover {
+  border-radius: 0%;
+}
+@media (max-width: 730px) {
+  .contenedor__fotos .imagenes__hover {
+    max-height: 200px;
+    border-radius: 0px;
+  }
+}
+
+.carruseles__completo {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.carruseles__completo .contenedor__carrusel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 50%;
+}
+@media (max-width: 730px) {
+  .carruseles__completo .contenedor__carrusel {
+    width: 75%;
+  }
+}
+.carruseles__completo .contenedor__carrusel .subtitulo__departamentos {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.carruseles__completo .contenedor__carrusel .boton__reserva {
+  background-image: linear-gradient(45deg, #44a76b 0%, #cde960 100%);
+}
+.carruseles__completo .contenedor__carrusel div .imagenes__carrusel {
+  height: 700px;
+}
+@media (max-width: 730px) {
+  .carruseles__completo .contenedor__carrusel div .imagenes__carrusel {
+    height: 350px;
+  }
+}
+
+.contenedor__consideraciones {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  box-sizing: border-box;
+}
+.contenedor__consideraciones p {
+  font-size: 30px;
+}
+.contenedor__consideraciones .contenedor__puntaje {
+  box-sizing: border-box;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "uno uno uno dos" "tres tres cuatro cuatro";
+  justify-items: stretch;
+  align-items: stretch;
+}
+@media (max-width: 730px) {
+  .contenedor__consideraciones .contenedor__puntaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje--uno {
+  grid-area: uno;
+  box-sizing: border-box;
+}
+.contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje--dos {
+  grid-area: dos;
+  box-sizing: border-box;
+}
+.contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje--tres {
+  grid-area: tres;
+  box-sizing: border-box;
+}
+.contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje--cuatro {
+  grid-area: cuatro;
+  box-sizing: border-box;
+}
+.contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje {
+  width: 100%;
+  max-height: auto;
+  border-radius: 5%;
+  padding: 15px;
+}
+@media (max-width: 730px) {
+  .contenedor__consideraciones .contenedor__puntaje .imagenes__puntaje {
+    max-height: 250px;
+  }
+}
+
+.contenedor__nosotros {
+  height: 600px;
+  box-sizing: border-box;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  display: flex;
+  margin-top: 10px;
+}
+.contenedor__nosotros .bloque__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Jura", sans-serif;
+  padding: 15px;
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 730px) {
+  .contenedor__nosotros .bloque__titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: stretch;
+    align-content: stretch;
+    height: auto;
+  }
+}
+.contenedor__nosotros .bloque__titulo:hover {
+  color: black;
+  transition: color 2s ease-in-out;
+}
+@media (max-width: 730px) {
+  .contenedor__nosotros .bloque__titulo {
+    padding: 10px;
+    text-align: center;
+    margin-right: 7px;
+  }
+}
+@media (max-width: 730px) {
+  .contenedor__nosotros .bloque__titulo p {
+    padding-right: 5%;
+  }
+}
+@media (max-width: 730px) {
+  .contenedor__nosotros img {
+    max-height: 100%;
+    overflow: hidden;
+  }
+}
+
+.contenedor__nosotros--dos {
+  flex-direction: row-reverse;
+}
+
+.contenedor__general {
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas: "uno dos tres";
+  gap: 20px;
+  background-color: #D9AFD9;
+  padding: 20px;
+  font-family: "Jura", sans-serif;
+}
+@media (max-width: 730px) {
+  .contenedor__general {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contenedor__general .presentacion__cartas:hover {
+  background-color: rgba(43, 255, 135, 0.3960784314);
+  transition: background-color 2s ease-in-out;
+}
+.contenedor__general .presentacion__cartas .presentacion__boton {
+  background-color: #97D9E1;
+  border: none;
+  color: black;
+}
+
+.contenedor__contacto {
+  box-sizing: border-box;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+}
+.contenedor__contacto .input__formulario--boton {
+  padding-left: 45%;
+}
+.contenedor__contacto .input__formulario--boton .boton__contacto {
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  background-color: #D9AFD9;
+}
+
+.contenedor__iframe {
+  height: 600px;
+  background-color: #D9AFD9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 25px;
+  font-size: 22px;
+  font-family: "Jura", sans-serif;
+}
+.contenedor__iframe h5 {
+  font-size: 26px;
+}
+.contenedor__iframe .iframe__mapa {
+  max-height: 300px;
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

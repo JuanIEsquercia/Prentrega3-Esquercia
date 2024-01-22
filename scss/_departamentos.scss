@@ -1,0 +1,112 @@
+// departamentos
+
+.carruseles__completo {
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: $font-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .contenedor__carrusel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        width: 50%;
+
+        @media (max-width:730px) {
+            width: 75%;
+        }
+
+        .subtitulo__departamentos {
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .boton__reserva {
+            background-image: $boton-imagen;
+        }
+
+        div {
+
+            .imagenes__carrusel {
+                height: 700px;
+
+                @media (max-width:730px) {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+// consideraciones y puntajes
+.contenedor__consideraciones {
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: $font-primary;
+    box-sizing: border-box;
+
+    p {
+        font-size: 30px;
+    }
+
+    .contenedor__puntaje {
+        box-sizing: border-box;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "uno uno uno dos"
+            "tres tres cuatro cuatro";
+        justify-items: stretch;
+        align-items: stretch;
+
+        @media (max-width:730px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .imagenes__puntaje--uno {
+            grid-area: uno;
+            box-sizing: border-box;
+        }
+
+        .imagenes__puntaje--dos {
+            grid-area: dos;
+            box-sizing: border-box;
+        }
+
+        .imagenes__puntaje--tres {
+            grid-area: tres;
+            box-sizing: border-box;
+        }
+
+        .imagenes__puntaje--cuatro {
+            grid-area: cuatro;
+            box-sizing: border-box;
+        }
+
+        .imagenes__puntaje {
+            width: 100%;
+            max-height: auto;
+            border-radius: 5%;
+            padding: 15px;
+
+            @media (max-width:730px) {
+                max-height: 250px;
+            }
+        }
+    }
+}

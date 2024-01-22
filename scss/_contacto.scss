@@ -1,0 +1,48 @@
+// contacto
+.contenedor__contacto {
+    box-sizing: border-box;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: $font-primary;
+    font-weight: bold;
+
+    .input__formulario--boton {
+        padding-left: 45%;
+
+        .boton__contacto {
+            background-image: $imagen-bg;
+            background-color: $color-bg;
+        }
+    }
+}
+
+.contenedor__iframe {
+    height: 600px;
+    background-color: $color-bg;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 25px;
+    font-size: 22px;
+    font-family: $font-primary;
+
+    h5 {
+        font-size: 26px;
+    }
+
+    .iframe__mapa {
+        max-height: 300px;
+        width: auto;
+    }
+}
