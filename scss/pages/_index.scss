@@ -1,29 +1,18 @@
 // main index
 
 .contenedor__index {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    background-color: $color-bg;
-    background-image: $imagen-bg;
+    @extend .contenedor__estandar;
     font-family: $font-primary;
-    box-sizing: border-box;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     color: white;
     text-align: center;
 
-    @media (max-width:730px) {
-        display: flex;
-        flex-direction: column;
-    }
-
-
     .parrafo__index {
         color: white;
         font-family: $font-primary;
-        font-size: 30px;
+        font-size: map-get($font-size, text-desktop );
         text-align: center;
     }
 
@@ -43,9 +32,7 @@
     .imagen__index {
         height: 200px;
 
-        @media (max-width:730px) {
-            height: 100px;
-        }
+
     }
 
 
@@ -68,74 +55,63 @@
     align-items: stretch;
     background-color: $color-bg;
     background-image: $imagen-bg;
-    width: 100%;
 
-    @media (max-width:730px) {
-        display: flex;
-        flex-direction: column;
-    }
-
+    width: map-get($contenedores, lg);
 
     .grilla__imagenes--uno {
         grid-area: uno;
-        box-sizing: border-box;
 
-        @media (max-width:730px) {
-            display: none;
-        }
 
     }
 
     .grilla__imagenes--dos {
         grid-area: dos;
-        box-sizing: border-box;
+
 
     }
 
     .grilla__imagenes--tres {
         grid-area: tres;
-        box-sizing: border-box;
+
 
     }
 
     .grilla__imagenes--cuatro {
         grid-area: cuatro;
-        box-sizing: border-box;
+
 
     }
 
     .grilla__imagenes--cinco {
         grid-area: cinco;
-        box-sizing: border-box;
+
 
     }
 
     .grilla__imagenes--ocho {
         grid-area: seis;
-        box-sizing: border-box;
+
 
     }
 
     .grilla__imagenes--siete {
         grid-area: siete;
-        box-sizing: border-box;
+
 
     }
 
     .imagenes__hover {
-        width: 100%;
+        width: map-get($contenedores, lg);
         height: auto;
         box-sizing: border-box;
         border-radius: 35%;
+
 
         &:hover {
             border-radius: 0%;
         }
 
-        @media (max-width:730px) {
-            max-height: 200px;
-            border-radius: 0px;
-        }
+
     }
 
 

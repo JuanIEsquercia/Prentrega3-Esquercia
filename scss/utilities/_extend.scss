@@ -1,0 +1,8 @@
+.contenedor__estandar{
+    height: map-get($contenedores, alto-desktop );
+    box-sizing: border-box;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    display: flex;
+    margin-top: 10px;
+}

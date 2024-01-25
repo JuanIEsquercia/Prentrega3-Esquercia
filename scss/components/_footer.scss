@@ -1,0 +1,15 @@
+.div__pie {
+    box-sizing: content-box;
+
+    .lista__pie {
+        list-style: none;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+
+        .link__pie {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

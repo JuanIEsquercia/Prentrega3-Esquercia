@@ -1,0 +1,35 @@
+// nosotros
+
+.contenedor__nosotros {
+    @extend .contenedor__estandar;
+
+
+    .bloque__titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: $font-primary;
+        padding: 15px;
+        align-content: center;
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        height: auto;
+
+        &:hover {
+            color: black;
+            transition: color 2s ease-in-out;
+        }
+
+    }
+    .imagenes__nosotros{
+        width: auto;
+        box-sizing: border-box;
+    }
+}
+
+
+    .contenedor__nosotros--dos {
+        flex-direction: row-reverse;
+    }

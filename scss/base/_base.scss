@@ -5,12 +5,13 @@
     box-sizing: content-box;
 }
 
+
 // titulo general
 .contenedor__titulo {
 
     background-color: $color-bg;
     background-image: $imagen-bg;
-    height: 600px;
+    height: map-get($contenedores, alto-desktop );
     display: flex;
     justify-content: center;
     align-content: center;
@@ -18,12 +19,7 @@
     flex-wrap: wrap;
     flex-direction: column;
 
-    @media (max-width:730px) {
-        height: 350px;
-        padding: 10px;
-        text-align: center;
 
-    }
 
     h2 {
         font-family: $font-primary;
@@ -41,20 +37,3 @@
     }
 }
 
-// footer
-
-.div__pie {
-    box-sizing: content-box;
-
-    .lista__pie {
-        list-style: none;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-around;
-
-        .link__pie {
-            text-decoration: none;
-            color: black;
-        }
-    }
-}
