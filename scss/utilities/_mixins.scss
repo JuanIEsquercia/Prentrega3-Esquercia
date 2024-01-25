@@ -10,8 +10,9 @@
     align-items: center;
 }
 
-@mixin flex-variable ($j-content, $a-content) {
+@mixin flex-variable ($direction,$j-content, $a-content) {
     display: flex;
+    flex-direction: $direction;
     justify-content: $j-content;
     align-content: $a-content;
 }

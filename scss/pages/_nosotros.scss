@@ -2,20 +2,21 @@
 
 .contenedor__nosotros {
     @extend .contenedor__estandar;
-
+    width: map-get($contenedores, lg);
+    box-sizing: border-box;
+    overflow-x: hidden;
 
     .bloque__titulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flex-variable (column, space-around, center);
         font-family: $font-primary;
+        flex-wrap: wrap;
         padding: 15px;
-        align-content: center;
         text-align: center;
-        font-size: 16px;
+        font-size: map-get($font-size, subtitulo-desktop);
         color: white;
         text-align: center;
         height: auto;
+        width: 100%;
 
         &:hover {
             color: black;
@@ -24,8 +25,8 @@
 
     }
     .imagenes__nosotros{
-        width: auto;
-        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
     }
 }
 

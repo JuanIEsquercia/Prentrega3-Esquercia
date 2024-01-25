@@ -81,36 +81,40 @@
 
 
     }
+}
 
+
+@media (max-width:900px) {
+
+    .contenedor__nosotros {
+
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+
+
+        .imagen__nosotros {
+            height: 250px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
 
     .contenedor__general {
-        display: flex;
-        flex-direction: column;
+        height: auto;
+        @include flex-variable(column, center, center);
 
         .presentacion__cartas {
-            height: auto;
+            flex-wrap: wrap;
 
-            .boton {
-                position: relative;
-                margin-top: 4px;
+            h2 {
+                height: map-get($font-size, title-mobile);
+
+            }
+
+            p {
+                height: map-get($font-size, text-mobile);
             }
         }
     }
-}
-
-
-@media (max-width:900px)  {
-
-    .contenedor__nosotros{
-
-    height: auto;
-    flex-direction: column;
-    overflow-x: hidden;
-
-
-    .imagen__nosotros {
-        height: 50%;
-        max-width: 100%;
-    }
-}
 }

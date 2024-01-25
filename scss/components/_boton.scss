@@ -1,6 +1,6 @@
 .boton{
     background-image: $boton-imagen;
     background-color: $color-bg;
-    position: absolute;
-    bottom: 5px;
+    position: relative;
+    top:10px;
 }

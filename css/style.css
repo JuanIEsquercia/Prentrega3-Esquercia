@@ -11,8 +11,8 @@
 .boton {
   background-image: linear-gradient(45deg, #44a76b 0%, #cde960 100%);
   background-color: #D9AFD9;
-  position: absolute;
-  bottom: 5px;
+  position: relative;
+  top: 10px;
 }
 
 .carruseles__completo {
@@ -54,18 +54,25 @@
   padding: 20px;
   font-family: "Jura", sans-serif;
 }
-.contenedor__general .presentacion__cartas {
-  height: 200px;
+.contenedor__general .presentacion__cartas h2 {
+  font-size: 20px;
 }
 .contenedor__general .presentacion__cartas:hover {
   background-color: rgba(43, 255, 135, 0.3960784314);
   transition: background-color 2s ease-in-out;
+}
+.contenedor__general .presentacion__cartas h3 {
+  font-size: 16px;
+}
+.contenedor__general .presentacion__cartas p {
+  font-size: 12px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  overflow-x: hidden;
 }
 
 .contenedor__titulo {
@@ -75,15 +82,17 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  box-sizing: border-box;
 }
-.contenedor__titulo h2 {
+.contenedor__titulo h1 {
   font-family: "Jura", sans-serif;
   color: black;
 }
-.contenedor__titulo h2:hover {
+.contenedor__titulo h1:hover {
   color: white;
   transition: color 2s ease-in-out;
   font-weight: bold;
@@ -94,9 +103,10 @@
 
 header .navegador__estilo {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.779);
+  background-color: white;
   z-index: 10000;
   width: 100%;
+  background-color: white;
 }
 
 .div__pie {
@@ -227,26 +237,33 @@ header .navegador__estilo {
   padding: 15px;
 }
 
+.contenedor__nosotros {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 .contenedor__nosotros .bloque__titulo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: "Jura", sans-serif;
-  padding: 15px;
   align-content: center;
+  font-family: "Jura", sans-serif;
+  flex-wrap: wrap;
+  padding: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   text-align: center;
   height: auto;
+  width: 100%;
 }
 .contenedor__nosotros .bloque__titulo:hover {
   color: black;
   transition: color 2s ease-in-out;
 }
 .contenedor__nosotros .imagenes__nosotros {
-  width: auto;
-  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .contenedor__nosotros--dos {
@@ -365,17 +382,6 @@ header .navegador__estilo {
   .contenedor__nosotros .bloque__titulo p {
     padding-right: 5%;
   }
-  .contenedor__general {
-    display: flex;
-    flex-direction: column;
-  }
-  .contenedor__general .presentacion__cartas {
-    height: auto;
-  }
-  .contenedor__general .presentacion__cartas .boton {
-    position: relative;
-    margin-top: 4px;
-  }
 }
 @media (max-width: 900px) {
   .contenedor__nosotros {
@@ -384,8 +390,25 @@ header .navegador__estilo {
     overflow-x: hidden;
   }
   .contenedor__nosotros .imagen__nosotros {
-    height: 50%;
-    max-width: 100%;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contenedor__general {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .contenedor__general .presentacion__cartas {
+    flex-wrap: wrap;
+  }
+  .contenedor__general .presentacion__cartas h2 {
+    height: 22px;
+  }
+  .contenedor__general .presentacion__cartas p {
+    height: 16px;
   }
 }
 

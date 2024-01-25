@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    overflow-x: hidden;
 }
 
 
@@ -12,16 +13,16 @@
     background-color: $color-bg;
     background-image: $imagen-bg;
     height: map-get($contenedores, alto-desktop );
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flex-center;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    box-sizing: border-box;
 
 
 
-    h2 {
+    h1 {
         font-family: $font-primary;
         color: black;
 
