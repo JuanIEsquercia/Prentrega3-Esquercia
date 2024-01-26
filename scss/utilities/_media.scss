@@ -1,3 +1,37 @@
+@media (max-width:900px) {
+
+    .contenedor__nosotros {
+
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+
+
+        .imagen__nosotros {
+            height: 250px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .contenedor__general {
+        height: auto;
+        @include flex-variable(column, center, center);
+
+        .presentacion__cartas {
+            flex-wrap: wrap;
+
+            h2 {
+                height: map-get($font-size, title-mobile);
+
+            }
+
+            p {
+                height: map-get($font-size, text-mobile);
+            }
+        }
+    }
+}
 @media (max-width:730px) {
     .contenedor__titulo {
         height: map-get($contenedores, alto-mobile);
@@ -83,38 +117,3 @@
     }
 }
 
-
-@media (max-width:900px) {
-
-    .contenedor__nosotros {
-
-        height: auto;
-        flex-direction: column;
-        overflow-x: hidden;
-
-
-        .imagen__nosotros {
-            height: 250px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-    }
-
-    .contenedor__general {
-        height: auto;
-        @include flex-variable(column, center, center);
-
-        .presentacion__cartas {
-            flex-wrap: wrap;
-
-            h2 {
-                height: map-get($font-size, title-mobile);
-
-            }
-
-            p {
-                height: map-get($font-size, text-mobile);
-            }
-        }
-    }
-}

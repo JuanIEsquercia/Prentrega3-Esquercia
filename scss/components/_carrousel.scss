@@ -5,34 +5,35 @@
     text-align: center;
     padding: 10px;
     font-family: $font-primary;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-variable(column, center,center);
     align-items: center;
     box-sizing: border-box;
 
-    .contenedor__carrusel {
+    .contenedor__carrusel{
         display: flex;
         flex-direction: column;
         margin-top: 25px;
         width: map-get($contenedores, sm);
-    }
 
-
-    .subtitulo__departamentos {
-        color: black;
-        font-weight: bold;
-        font-size: map-get($font-size, text-desktop);
-        margin-bottom: 20px;
-
-    }
-
-
-    div {
-
-        .imagenes__carrusel {
-            height: 700px;
-
+        .subtitulo__departamentos {
+            color: black;
+            font-weight: bold;
+            font-size: map-get($font-size, text-desktop);
+            margin-bottom: 20px;
+    
+            
+                div {
+            
+                    .imagenes__carrusel {
+                        height: 700px;
+            
+                    }
+                    .boton__reserva{
+                        height: auto;
+                    }
+                }
+            }
         }
     }
-}
+
+
