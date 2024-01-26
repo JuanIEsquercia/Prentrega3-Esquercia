@@ -1,0 +1,120 @@
+@media (max-width:730px) {
+    .contenedor__titulo {
+        height: map-get($contenedores, alto-mobile);
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contenedor__general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor__index {
+        display: flex;
+        flex-direction: column;
+        height: map-get($contenedores, alto-mobile);
+
+        .imagen__index {
+            height: 100px;
+        }
+    }
+
+    .contenedor__fotos {
+        display: flex;
+        flex-direction: column;
+
+        .grilla__imagenes--uno {
+            display: none;
+        }
+
+        .imagenes__hover {
+            max-height: 200px;
+            border-radius: 0px;
+        }
+    }
+
+    .carruseles__completo {
+        width: map-get($contenedores, lg);
+
+        .contenedor__carrusel {
+            width: map-get($contenedores, md);
+        }
+
+        .imagenes__carrusel {
+            height: 350px;
+        }
+    }
+
+    .contenedor__consideraciones {
+        p {
+            font-size: map-get($contenedores, text-mobile);
+        }
+
+        .contenedor__puntaje {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .imagenes__puntaje {
+                max-height: 250px;
+            }
+        }
+    }
+
+    .contenedor__nosotros {
+
+
+        .bloque__titulo {
+
+            font-size: map-get($font-size, text-mobile);
+            justify-content: space-around;
+            height: map-get($contenedores, alto-mobile);
+            padding: 10px;
+            text-align: center;
+            margin-right: 7px;
+
+            p {
+                padding-right: 5%;
+            }
+        }
+
+
+    }
+}
+
+
+@media (max-width:900px) {
+
+    .contenedor__nosotros {
+
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+
+
+        .imagen__nosotros {
+            height: 250px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .contenedor__general {
+        height: auto;
+        @include flex-variable(column, center, center);
+
+        .presentacion__cartas {
+            flex-wrap: wrap;
+
+            h2 {
+                height: map-get($font-size, title-mobile);
+
+            }
+
+            p {
+                height: map-get($font-size, text-mobile);
+            }
+        }
+    }
+}

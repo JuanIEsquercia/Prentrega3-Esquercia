@@ -1,0 +1,51 @@
+// contacto
+.contenedor__contacto {
+    box-sizing: border-box;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    margin-top: 10px;
+    @include flex-variable (column, center, center);
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: $font-primary;
+    font-weight: bold;
+    
+    .input__formulario--m{
+        padding: 0;
+    }
+    .input__formulario--boton {
+        padding-left: 45%;
+        
+
+        .boton__contacto {
+            background-image: $imagen-bg;
+            background-color: $color-bg;
+            position: relative;
+            right: 41%;
+        }
+    }
+}
+
+.contenedor__iframe {
+    height: map-get($contenedores, alto-desktop );
+    background-color: $color-bg;
+    box-sizing: border-box;
+    @include flex-variable (column, space-around, center);
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 25px;
+    font-size: map-get($font-size, text-mobile );
+    font-family: $font-primary;
+
+    h5 {
+        font-size: map-get($font-size, subtitulo-mobile);
+    }
+
+    .iframe__mapa {
+        max-height: map-get($contenedores, alto-mobile );
+        width: auto;
+    }
+}

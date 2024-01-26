@@ -1,0 +1,9 @@
+header{
+    .navegador__estilo{
+        position: fixed;
+        background-color: white;
+        z-index: 10000;
+        width: map-get($contenedores, lg);
+        background-color: white;
+}
+}

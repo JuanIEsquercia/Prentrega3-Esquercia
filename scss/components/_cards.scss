@@ -1,0 +1,32 @@
+.contenedor__general {
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+        "uno dos tres";
+    gap: 20px;
+    background-color: $color-bg;
+    padding: 20px;
+    font-family: $font-primary;
+
+
+
+    .presentacion__cartas {
+
+        h2{
+            font-size: map-get($font-size, subtitulo-desktop);
+        }
+        &:hover {
+            background-color: $hover-bg;
+            transition: background-color 2s ease-in-out;
+        }
+        h3{
+            font-size: map-get($font-size, subtitulo-menor);
+        }
+        p{
+            font-size: map-get($font-size, text-menor );
+        }
+
+    }
+
+}

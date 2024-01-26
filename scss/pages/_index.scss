@@ -1,0 +1,118 @@
+// main index
+
+.contenedor__index {
+    @extend .contenedor__estandar;
+    font-family: $font-primary;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    .parrafo__index {
+        color: white;
+        font-family: $font-primary;
+        font-size: map-get($font-size, text-desktop );
+        text-align: center;
+    }
+
+    .subtitulo__index {
+        &:hover {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .imagen__index {
+        height: 200px;
+
+
+    }
+
+
+}
+
+// fotos index
+
+.contenedor__fotos {
+    box-sizing: border-box;
+    margin-top: 10px;
+    gap: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "uno uno dos tres"
+        "cuatro cuatro cinco cinco"
+        "seis seis siete siete"
+        "ocho ocho ocho ocho";
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+
+    width: map-get($contenedores, lg);
+
+    .grilla__imagenes--uno {
+        grid-area: uno;
+
+
+    }
+
+    .grilla__imagenes--dos {
+        grid-area: dos;
+
+
+    }
+
+    .grilla__imagenes--tres {
+        grid-area: tres;
+
+
+    }
+
+    .grilla__imagenes--cuatro {
+        grid-area: cuatro;
+
+
+    }
+
+    .grilla__imagenes--cinco {
+        grid-area: cinco;
+
+
+    }
+
+    .grilla__imagenes--ocho {
+        grid-area: seis;
+
+
+    }
+
+    .grilla__imagenes--siete {
+        grid-area: siete;
+
+
+    }
+
+    .imagenes__hover {
+        width: map-get($contenedores, lg);
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 35%;
+
+
+        &:hover {
+            border-radius: 0%;
+        }
+
+
+    }
+
+
+}

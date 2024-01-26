@@ -1,0 +1,15 @@
+// informacion
+
+.contenedor__general {
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+        "uno dos tres";
+    gap: 20px;
+    background-color: $color-bg;
+    padding: 20px;
+    font-family: $font-primary;
+
+
+}

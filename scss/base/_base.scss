@@ -1,0 +1,40 @@
+// reseteo css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    overflow-x: hidden;
+}
+
+
+// titulo general
+.contenedor__titulo {
+
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    height: map-get($contenedores, alto-desktop );
+    @include flex-center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+
+
+
+    h1 {
+        font-family: $font-primary;
+        color: black;
+
+        &:hover {
+            color: white;
+            transition: color 2s ease-in-out;
+            font-weight: bold;
+        }
+    }
+
+    p {
+        color: white;
+    }
+}
+

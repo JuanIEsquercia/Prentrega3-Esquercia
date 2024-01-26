@@ -1,0 +1,36 @@
+// nosotros
+
+.contenedor__nosotros {
+    @extend .contenedor__estandar;
+    width: map-get($contenedores, lg);
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    .bloque__titulo {
+        @include flex-variable (column, space-around, center);
+        font-family: $font-primary;
+        flex-wrap: wrap;
+        padding: 15px;
+        text-align: center;
+        font-size: map-get($font-size, subtitulo-desktop);
+        color: white;
+        text-align: center;
+        height: auto;
+        width: 100%;
+
+        &:hover {
+            color: black;
+            transition: color 2s ease-in-out;
+        }
+
+    }
+    .imagenes__nosotros{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+
+    .contenedor__nosotros--dos {
+        flex-direction: row-reverse;
+    }

@@ -1,0 +1,38 @@
+.carruseles__completo {
+    background-color: $color-bg;
+    background-image: $imagen-bg;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: $font-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .contenedor__carrusel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        width: map-get($contenedores, sm)
+    }
+
+
+    .subtitulo__departamentos {
+        color: black;
+        font-weight: bold;
+        font-size: map-get($font-size, text-desktop);
+        margin-bottom: 20px;
+
+    }
+
+
+    div {
+
+        .imagenes__carrusel {
+            height: 700px;
+
+        }
+    }
+}
