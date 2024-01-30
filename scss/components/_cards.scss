@@ -15,6 +15,7 @@
 
         h2{
             font-size: map-get($font-size, subtitulo-desktop);
+            
         }
         &:hover {
             background-color: $hover-bg;
