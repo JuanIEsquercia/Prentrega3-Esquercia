@@ -21,17 +21,25 @@
         .presentacion__cartas {
             flex-wrap: wrap;
 
-            h2 {
-                height: map-get($font-size, title-mobile);
+            div {
+                box-sizing: border-box;
 
-            }
+                h2 {
+                    height: map-get($font-size, title-mobile);
 
-            p {
-                height: map-get($font-size, text-mobile);
+                }
+
+                div {
+                    p {
+                        height: map-get($font-size, text-mobile);
+                        box-sizing: content-box;
+                    }
+                }
             }
         }
     }
 }
+
 @media (max-width:730px) {
     .contenedor__titulo {
         height: map-get($contenedores, alto-mobile);
@@ -116,4 +124,3 @@
 
     }
 }
-
